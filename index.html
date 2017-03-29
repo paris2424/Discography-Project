@@ -1,0 +1,521 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!--Basic page needs
+=============================-->
+<head>
+<meta charset="utf-8">
+<title>OneRepublic</title>
+<meta name="description" content="Discography Website">
+<meta name="author" content="OneRepublic">
+    
+<!-- Mobile Specific Metas
+================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/script.js"></script>    
+<!-- Styles
+=================================================== -->
+
+</head> 
+    <style>
+/* Site Styles */
+@import url('https://fonts.googleapis.com/css?family=Trirong');
+        
+              
+body {
+background-image: url(images/texture-wallpaper-23.jpg);
+vertical-align: baseline;
+margin: 0 auto;
+line-height: 1.5em;
+font-family: 'Trirong', sans-serif;
+color: #fff;
+
+}
+        
+#page {
+margin: 2%;
+}
+        
+p {
+padding: 20px 40px 20px ;
+font-family: 'Trirong', sans-serif;
+font-size: 18px;
+line-height: 1.5em;
+}
+        
+section {
+margin-bottom: 2em;
+}
+
+.navbar {
+font-family: 'Trirong', sans-serif;
+background-color: rgba(0,0,0,0.7);
+border: 0;
+font-size: 12px !important;
+letter-spacing: 4px;
+opacity: 0.85;
+}
+.navbar-brand {
+letter-spacing: .75em;
+float: left;
+}
+.navbar li a, .navbar .navbar-brand {
+    color: #d5d5d5 !important;
+        }
+    
+.nav-tabs li a {color: #777;}
+    
+.navbar-nav li a:hover {
+    color: #fff !important;
+        }
+    
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+    
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+        }        
+
+.cuadro_intro_hover{
+padding: 0px;
+margin: 2em;
+position: relative;
+overflow: hidden;
+height: 550px;
+}
+	
+.cuadro_intro_hover:hover .caption{
+opacity: 1;
+transform: translateY(-500px);
+-webkit-transform:translateY(-500px);
+-moz-transform:translateY(-500px);
+-ms-transform:translateY(-500px);
+-o-transform:translateY(-500px);
+}
+        
+.cuadro_intro_hover img{
+z-index: 1;
+}
+        
+.cuadro_intro_hover .caption{
+position: absolute;
+top:500px;
+-webkit-transition:all 0.3s ease-in-out;
+-moz-transition:all 0.3s ease-in-out;
+-o-transition:all 0.3s ease-in-out;
+-ms-transition:all 0.3s ease-in-out;
+transition:all 0.3s ease-in-out;
+width: 100%;
+}
+        
+.cuadro_intro_hover .blur{
+background-color: rgba(0,0,0,0.7);
+height:550px;
+z-index: 1;
+position: absolute;
+width: 600px; 
+}
+        
+.cuadro_intro_hover .caption-text{
+z-index: 1;
+color: #fff;
+position: absolute;
+height: 550px;
+text-align: center;
+top:-20px;
+width: 600px;
+}
+  
+footer{
+background-color: rgba(0,0,0,.65);
+color: #fff;
+padding: 10px 0 0 0;
+}
+
+.source{
+display: block;
+text-align: center;
+margin-left: 30%;
+width: 40%;   
+}
+
+footer a{
+color:#fff;
+text-decoration: none;
+}
+
+footer a:hover{
+color: #0FA0CE;
+text-decoration: none;
+}
+
+.social-media{
+margin-left: 41%;
+width:15%;
+}
+
+.social-media a{
+cursor: pointer;
+}
+
+.social-media li{
+display: inline;
+list-style-type:none;
+}
+
+.imgrt{
+border-radius: 20%;
+height: 15%;
+width: 15%;
+}
+
+
+</style>
+<!--Primary Page Layout
+================================-->
+<body id="mypage" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">OneRepublic</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">Home</a></li>
+        <li><a href="#bio">Biography</a></li>
+        <li><a href="#music">Music</a></li>
+        <li><a href="#signup">Sign Up</a></li>
+      <li><a href=login.html><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+      </div>
+</nav>
+    <div class="content container">
+  <div class="row">
+    <section class="col-sm-12">
+
+<div class="carousel slide" data-ride="carousel" id="featured">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#featured" data-slide-to="0" class="active"></li>
+    <li data-target="#featured" data-slide-to="1"></li>
+    <li data-target="#featured" data-slide-to="2"></li>
+    <li data-target="#featured" data-slide-to="3"></li>
+    <li data-target="#featured" data-slide-to="4"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/pic-00.jpg" alt="onerepublic_img">
+    </div>
+      
+    <div class="item">
+     <img src="images/pic-01.jpg" alt="onerepublic_img">
+    </div>
+
+    <div class="item">
+      <img src="images/pic-02.jpg" alt="onerepublic_img">
+    </div>
+        
+    <div class="item">
+      <img src="images/pic-03.jpg" alt="onerepublic_img">
+    </div>
+      
+    <div class="item">
+      <img src="images/pic-05.jpg" alt="onerepublic_img">
+    </div>
+  </div>
+      
+    
+  <!-- Controls -->
+
+  <a class="left carousel-control" href="#featured" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"  aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#featured" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+      </section>
+        </div>
+    </div>
+    <div id="page">
+<!-- ABOUT -->   
+<section id="about">
+    <h1>Biography</h1>
+        <p>American pop rock/adult contemporary band OneRepublic has released four studio albums, four extended plays, 13 singles, two promotional singles, and 15 music videos. Formed in 2002, OneRepublic first found commercial recognition when their song "Apologize" was released onto Myspace in 2005 and they subsequently became the biggest act on that site. It was remixed by American record producer Timbaland, appearing on his album Shock Value. Released as a single in 2007, the song topped the charts in multiple countries, including Australia and Canada, while also reaching the top three in the United States and the United Kingdom. It has since sold over 3.6 million digital downloads in the United States.
+          <a href="https://en.wikipedia.org/wiki/OneRepublic" title="OneRepublic-About"><cite>For more details..</cite></a></p>
+</section>
+<!-- BIOGRAPHY -->    
+<section id="bio">
+    <h1>Band Members</h1>
+        <!-- ROW 1 -->
+        <div class="row">
+
+            <div class="col-md-2">
+                <div class="text-center">
+                <p><strong>Ryan Tedder</strong></p><br>
+                        <img src="images/Rayan-Tedder.jpg" class="img-rounded" alt="member" width="150" height="150"><br><p>Lead Vocals/Guitar/Piano</p>
+            </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="text-center">
+                <p><strong>Zach Filkins</strong></p><br>
+                <img src="images/Zach-Filkins.jpg" class="img-rounded" alt="member" width="150" height="150"><br><p>Guitar/Vocals</p>               
+            </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="text-center">
+                <p><strong>Eddie Fisher</strong></p><br>
+                        <img src="images/Eddie.jpg" class="img-rounded" alt="member" width="150" height="150"><br>
+                    <p>Drummer</p>
+                </div>
+            </div>
+
+                   <div class="col-md-2">
+                    <div class="text-center">
+                <p><strong>Brent Kutzle</strong></p><br>
+                        <img src="images/Brent-Kutzle.jpg" class="img-rounded" alt="member" width="150" height="150"><br><p>Bass/Cello/Vocals</p>
+                       </div>
+            </div>
+
+                  <div class="col-md-2">
+                  <div class="text-center">
+                <p><strong>Drew Brown</strong></p><br>
+                        <img src="images/Drew-Brown.jpg" class="img-rounded" alt="member" width="150" height="150"><br><p>Guitar</p>
+                      </div>  
+                </div>
+            </div>
+</section>
+    
+<!-- MUSIC -->
+    <section id="music">
+    <h1>Music</h1>
+    <div class="row">
+    <!-- ALBUM 1 -->
+        <div class =" container">
+    	<div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+    				<div class="cuadro_intro_hover">
+                       <img src="images/ohmy.jpg" alt="album" class="img-responsive" width="600" height="600">
+						<div class="caption">
+							<div class="blur"></div>
+							<div class="caption-text">
+								<h2 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">OhMyMy</h2>
+								<ol>
+                                    <li>Let's Hurt To Night</li>
+                                    <li>Oh My My ft.Peter Gabriel</li>
+                                    <li>Kids</li>
+                                    <li>Dream</li> 
+                                    <li>Choke</li>
+                                    <li>A.I. ft. Peter Gabriel</li>
+                                    <li>Better</li>
+                                    <li>Born</li>
+                                    <li>Fingertips</li>
+                                    <li>Human</li>
+                                    <li>Lift Me Up</li>
+                                    <li>NbHD ft. Santigold</li>
+                                    <li>Wherever I Go</li>
+                                    <li>All These Things</li>
+                                    <li>Heaven</li>
+                                    <li>Colors</li>
+                                    <li>The Less I Know</li>
+                                </ol>
+								<a class=" btn btn-default" href="https://youtu.be/mptK0w0G_3o"><span class="glyphicon glyphicon-facetime-video">WatchVideos</span></a>
+							</div>
+						</div>
+					</div>
+	    </div>
+            <!-- ALBUM 2 -->
+    	<div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+    				<div class="cuadro_intro_hover">
+                       <img src="images/dreaming-out.jpeg" alt="album" class="img-responsive" width="600" height="600">
+						<div class="caption">
+							<div class="blur"></div>
+							<div class="caption-text">
+								<h2 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">Dreaming Out Loud</h2>
+								<ol>
+                                    <li>Say (All I Need)</li>
+                                    <li>Mercy</li>
+                                    <li>Stop &amp; Star</li>
+                                    <li>Apologize</li>
+                                    <li>Goodbye, Apathy</li>
+                                    <li>All Fall Down</li>
+                                    <li>Tyrant</li>
+                                    <li>Prodigal</li>
+                                    <li>Won't Stop</li>
+                                    <li>All We Are</li>
+                                    <li>Someone To Save You</li>
+                                    <li>Come Home</li>
+                                    <li>Apologize (Timbaland Remix)</li>
+                                    <li>Hearing Voices</li>
+                                    <li>Dreaming Loud</li>
+                                    </ol>
+								<a class=" btn btn-default" href="https://youtu.be/v4dlPUVC6rA?list=PLF073118521D5B1B2"><span class="glyphicon glyphicon-facetime-video">WatchVideos</span></a>
+							</div>
+						</div>
+					</div>
+	    </div>
+            <!-- ALBUM 3 -->
+
+        <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+    				<div class="cuadro_intro_hover ">
+                       <img src="images/native.jpg" alt="album" class="img-responsive" width="600" height="600">
+						<div class="caption">
+							<div class="blur"></div>
+							<div class="caption-text">
+								<h2 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">Native</h2>
+								<ol>
+                                 <li>Counting Stars</li>
+                                 <li>If I Lose Myself</li>
+                                 <li>Feel Again</li>
+                                 <li>What You Want</li>
+                                 <li>I Lived</li>
+                                 <li>Light It Up</li>
+                                 <li>Can't Stop</li>
+                                 <li>Au Revior</li>
+                                 <li>Burning Bridges</li>
+                                 <li>Something I Need</li>
+                                 <li>Preacher</li>
+                                 <li>Don't Look Down</li>
+                                 <li>Something's Gotta Give</li>
+                                 <li>Life In Color</li>
+                                 <li>If I Lose Myself (Acoustic)</li>
+                                 <li>What You Want (Acoustic)</li>
+                                 <li>Burning Bridges (Acoustic)</li>
+                               </ol>
+								<a class=" btn btn-default"href="https://youtu.be/ibOThZNkbuw?list=PL7rAQXa71fkzYlXWoBMk9c5U5x26J3PwI"><span class="glyphicon glyphicon-facetime-video">WatchVideos</span></a>
+							</div>
+						</div>
+					</div>
+	    </div>
+            <!-- ALBUM 4 -->
+
+        <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+    				<div class="cuadro_intro_hover">
+                       <img src="images/waking-up.jpg" alt="album" class="img-responsive" width="600" height="600">
+						<div class="caption">
+							<div class="blur"></div>
+							<div class="caption-text">
+								<h2 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">Waking Up</h2>
+								 <ol>
+                                  <li>Made For You</li>
+                                  <li>All The Right Moves</li>
+                                  <li>Secrets</li>
+                                  <li>Everybody Loves Me</li>
+                                  <li>Missing Person 1 &amp; 2</li>
+                                  <li>Good Life</li>
+                                  <li>All This Time</li>
+                                  <li>Fear</li>
+                                  <li>Waking Up</li>
+                                  <li>Marchin On</li>
+                                  <li>Lullaby</li>
+                                </ol>
+								<a class=" btn btn-default" href="https://youtu.be/ijccy4sQQDg?list=PL965528306BD40D51"><span class="glyphicon glyphicon-facetime-video">WatchVideos</span></a>
+							</div>
+						</div>
+					</div>
+	    </div>
+        </div>
+
+</div>
+    </section>
+<!-- Sign Up Form -->    
+<section id="signup">
+    <h1 class="signup">Sign Up</h1>
+        <p class="text">Sign up to receive our news and updates.</p>
+            <div class="form-group">
+                    <label for="required">&ast; Required</label>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-8 form-group">
+                <input class="form-control" id="firstname" name="first name" placeholder="First Name&ast;" type="text" required>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-8 form-group">
+                <input class="form-control" id="lastname" name="last name" placeholder="Last Name&ast;" type="text" required>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-8 form-group">
+                <input class="form-control" id="birthday" name="birthday" placeholder="Birthday (mm/dd/yyyy)" type="text" required>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-8 form-group">
+                <input class="form-control" id="adress" name="adress" placeholder="Adress" type="text" required>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-8 form-group">
+                <input class="form-control" id="city" name="city" placeholder="City" type="text" required>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-8 form-group">
+                <input class="form-control" id="state" name="state" placeholder="State" type="text" required>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-8 form-group">
+                <input class="form-control" id="zipcode" name="zipcode" placeholder="Zip Code" type="text" required>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-8 form-group">
+                <input class="form-control" id="email" name="email" placeholder="Email&ast;" type="email" required>
+            </div>
+            <div class="col-lg-5">
+                <div class="form-group">
+                        <label>Email Preference</label>
+                    <div class="radio">
+                        <label for="preference1">
+                            <input type="radio" name="preference" id="preference1" value="HTML" checked>HTML
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="preference2">
+                            <input type="radio" name="preference" id="preference2" value="Plain Text"> Plain Text
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="terms">Terms and Conditions</label>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="terms" id="terms" value="Agree" checked> I have read and agree to the terms and conditions
+                        </label>
+                    </div>
+                </div>
+            </div>
+    <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+    <div class="row">
+        <div class="col-md-12 form-group">
+            <a href="form.html" target="_blank"><button class="btn btn-primary pull-right" type="submit">SUBMIT</button></a>
+        </div>
+    </div>
+</section>
+    </div>
+<!--Footer
+================================-->
+    <footer>
+        <div class="source">
+          <span><a href="https://www.onerepublic.com/" target="_blank">Source - OneRepublic Official Website&reg;</a><br>&copy; Francis Tuttle Web Design &amp; Development &ndash; Paris Noorossana</span>
+        </div>
+          <div class="social-media">
+              <ul>
+                  <li><a href="https://www.facebook.com/OneRepublic"><img src="images/facebook.png" alt="Find us on Facebook" class="imgrt"></a></li>
+                  <li><a href="https://twitter.com/OneRepublic"><img src="images/twitter.png" alt="Find us on Twitter" class="imgrt"></a></li>
+                  <li><a href="https://www.instagram.com/onerepublic/"><img src="images/instagram.png" alt="Find us on Instagram" class="imgrt"></a></li> 
+                  <li><a href="https://www.youtube.com/user/onerepublicvevo"><img src="images/youtube.png" alt="Find us on YouTube" class="imgrt"></a></li>  
+              </ul>
+         </div>
+    </footer>
+    </body>
+        </html>
